@@ -8,7 +8,18 @@ body,html {
     padding-top: $size;
     color: #fff;    
 }
-
+.slider-gear {
+    width: 470px;
+    height: 470px;
+    position: absolute;
+    background-image: url(../images/dist/gear.svg);
+    background-size: cover;
+    background-position: center;
+    top: 50%;
+    margin-top: -270px;
+    z-index: 2;
+    right: calc(23.8% - 235px);
+}
 
 
 
@@ -364,7 +375,7 @@ body,html {
 .slider-text__desc {
 	max-width: 500px;
 	float: right;
-	clear: both;
+	clear: both; //чтобы текст не съезжал из под главного текста на больших разрешениях
 	font-size: 13px;
 	font-weight: 500;
 	margin-top: 15px;
@@ -440,7 +451,7 @@ body,html {
 		min-width: 42px;
 	}
 }
-slider-pagination-current {
+.slider-pagination-current {
 	font-size: 105px;
 	font-family: oswald-vh, sans-serif;
 	color: $deep;
@@ -448,6 +459,10 @@ slider-pagination-current {
 	position: absolute;
 	right: 40px;
 	bottom: 10px;
+    &__dot {
+      color: $accent;
+      -webkit-text-stroke: 1px transparent; 
+    }
 }
 .slider-navigation__container {
 	max-width: 70px;
