@@ -388,7 +388,7 @@ body,html {
 .slider-pagination {
 	flex: 0 140px;
 	text-align: center;
-	position: relative; //
+	position: relative; // упорядочивание точек в нужном поле 
     top: -16px;// дописал сам
 	height: $size;
 	display: flex;
